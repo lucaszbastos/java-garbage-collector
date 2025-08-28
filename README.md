@@ -140,7 +140,6 @@ src/
     
 -   How parallelism improves garbage collection performance.
     
--   How G1 GC optimizes collection based on heap regions.
     
 
 ----------
