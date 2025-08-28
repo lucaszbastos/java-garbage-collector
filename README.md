@@ -71,8 +71,8 @@ src/
 1.  Clone the repository:
     
     ```bash
-    git clone https://github.com/your-username/java-gc-algorithms.git
-    cd java-gc-algorithms
+    git clone https://github.com/lucaszbastos/java-garbage-collector.git
+    cd java-garbage-collector
     
     ```
     
