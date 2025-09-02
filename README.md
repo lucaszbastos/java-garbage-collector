@@ -34,7 +34,7 @@ The project includes **pure Java** implementations simulating the internal behav
 ## 🏗️ Project Structure
 
 ```
-src/
+java-garbage-collector/
  ├── SerialGarbageCollectir.java
  ├── ParallelGarbageCollector.java
  ├── GCObject.java
