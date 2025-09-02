@@ -78,7 +78,7 @@ src/
 2.  Compile the project:
     
     ```bash
-    javac java-garbage-collector/**/*.java
+    javac java-garbage-collector/*.java
     
     ```
     
