@@ -25,19 +25,16 @@ public class Main {
 
     public static void main(String[] args) {
 
-
-
-
-        GarbageCollector collector = getGarbageCollector(args);
-        int objectsQuantity = Integer.parseInt(args[0]);
-        for(int i = 1; i<=objectsQuantity; i++){
-            collector.allocateYoung(new GCObject("Obj"+i));
-        }
-        
+        try (GarbageCollector collector = getGarbageCollector(args)) {
+            int objectsQuantity = Integer.parseInt(args[0]);
+            for (int i = 1; i <= objectsQuantity; i++) {
+                collector.allocateYoung(new GCObject("Obj" + i));
+                }
+            }
         
         }
-      
-            
+       
     }
         
+
 
