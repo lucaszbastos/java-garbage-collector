@@ -1,4 +1,4 @@
-public interface GarbageCollector {
+public interface GarbageCollector extends AutoCloseable {
 
     void mark(GCObject obj);
 
@@ -10,4 +10,10 @@ public interface GarbageCollector {
     void promoteYoungObjects();
     void allocateYoung(GCObject object);
     void allocateOld(GCObject object);
+    @Override
+    default void close() {
+        shutdown();
+    }
+
+    default void shutdown(){}
 }
