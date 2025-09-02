@@ -11,7 +11,7 @@ public class Main {
         int mode               = parseIntOrThrow(args[1], "mode");
         int youngSize          = parsePositiveInt(args[2], "youngSize");
         int oldSize            = parsePositiveInt(args[3], "oldSize");
-        int rootCount          = parsePositiveInt(args[4], "rootCount"); // deve ser >0
+        int rootCount          = parsePositiveInt(args[4], "rootCount");
         int promotionThreshold = parseNonNegativeInt(args[5], "promotionThreshold");
 
 
@@ -33,7 +33,7 @@ public class Main {
             if (args.length < 7) {
                 throw new IllegalArgumentException("Missing numThreads for Parallel mode. Usage: ... [numThreads]");
             }
-            int numThreads = parsePositiveInt(args[6], "numThreads"); // >=1
+            int numThreads = parsePositiveInt(args[6], "numThreads");
             collector = new ParallelGarbageCollector(youngSize, oldSize, rootCount, numThreads, promotionThreshold);
         }
 
@@ -75,4 +75,5 @@ public class Main {
             
     }
         
+
 
