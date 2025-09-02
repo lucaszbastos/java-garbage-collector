@@ -1,4 +1,4 @@
-# 🚹 Java Garbage Collection Algorithms – Serial, Parallel, G1 GC
+# 🚹 Java Garbage Collection Algorithms – Serial, Parallel
 
 ![Java](https://img.shields.io/badge/Java-11%2B-blue.svg)  
 ![License](https://img.shields.io/badge/license-MIT-green.svg)  
