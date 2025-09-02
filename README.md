@@ -72,21 +72,20 @@ src/
     
     ```bash
     git clone https://github.com/lucaszbastos/java-garbage-collector.git
-    cd java-garbage-collector
     
     ```
     
 2.  Compile the project:
     
     ```bash
-    javac src/**/*.java
+    javac java-garbage-collector/**/*.java
     
     ```
     
 3.  Run the application:
     
     ```bash
-    java -cp src Main <objectsCount> <mode> <youngSize> <oldSize> <rootObjectsCount> <promotionThreshold> <numThreads>
+    java -cp java-garbage-collector Main <objectsCount> <mode> <youngSize> <oldSize> <rootObjectsCount> <promotionThreshold> <numThreads>
     
     ```
     The arguments must be passed in this order:
@@ -111,7 +110,7 @@ src/
 
 	Example:
 	```bash
-	java -cp src Main 50 2 10 20 1 2 4 
+	java -cp java-garbage-collector Main 50 2 10 20 1 2 4 
 	   ```
 
 	-   50 objects to allocate
